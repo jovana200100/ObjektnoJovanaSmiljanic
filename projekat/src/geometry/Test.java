@@ -7,7 +7,7 @@ public class Test {
 		int broj=20;
 		System.out.println(broj);
 		
-		point p1= new point ();
+		Point p1= new Point ();
 		System.out.println(p1);
 		System.out.println(p1.getX());
 		System.out.println(p1.getY());
@@ -18,7 +18,7 @@ public class Test {
 		
 		//Razdvajanje koncepta reference od koncepta objekta
 		
-		point p2 = new point ();
+		Point p2 = new Point ();
 		// p2 = ( x =0 , y = 0), p1 = (x = 100, y = 0)
 		System.out.println (p2.getX());
 		p2 = p1;
@@ -26,6 +26,31 @@ public class Test {
 		p2.setY(20);
 		System.out.println(p1.getY());
 		System.out.println(p2.getY());
+		
+		
+		//VEZBE 4
+		 Line l1 = new Line ();
+		 // Linija ima startPoint , endPoint i selected 
+		 l1.setStartPoint(p2);
+		 l1.setEndPoint(new Point ()) ;
+		 
+		 System.out.println (l1.getStartPoint());
+		 System.out.println (l1.getEndPoint());
+		 System.out.println (l1.isSelected()); 
+		 
+		
+		 
+		 System.out.println (l1.getStartPoint().getX()) ;
+		 
+		 //startPoint: (100,0) , endPoint: (0, 0)
+		 System.out.println ("Duzina linije l1 je: " + l1.length()) ;
+		 
+		 
+		 
+		 
+		 
+		
+		 
 		
 		
 
